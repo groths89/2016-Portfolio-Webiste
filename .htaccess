@@ -1,0 +1,6 @@
+#Check if the Mod_Rewrite its On
+RewriteEngine On
+#Get the specific files for us
+RewriteCond %{REQUEST_FILENAME} !-f
+#convert all calls to .php
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

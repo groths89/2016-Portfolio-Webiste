@@ -1,0 +1,31 @@
+<!--Start Breadcrumb-->
+<div class="row">
+	<div id="breadcrumb" class="col-xs-12">
+		<a href="#" class="show-sidebar">
+			<i class="fa fa-bars"></i>
+		</a>
+		<ol class="breadcrumb pull-left">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Dashboard</a></li>
+		</ol>
+	</div>
+</div>
+<!--End Breadcrumb-->
+        <div class="container">
+			<div class="row">
+				<div class="col-sm-12 mb" ng-controller="mainCTRL">
+					<form role="form">
+						<div class="form-group">
+                            <label for="panelHeadingInput">Title</label>
+                            <input type="text" class="form-control" id="panelHeadingInput" placeholder="Title" ng-model="panelHeading">
+                        </div>
+					</div>
+						<div class="form-group">
+                            <label for="panelBodyInput">Notes</label>
+                            <textarea rows="25" cols="50" class="form-control" id="panelBodyInput" ng-model="panelBody"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default pull-right">Save Note</button>
+					</form>	
+				</div>
+			</div>
+		</div>
